@@ -2,12 +2,8 @@
 # 获取当前分支
 branch=`git branch | grep "*"`
 
-echo "$branch"
-
 # 截取分支名
-currBranch=${branch:2}
-
-echo "$currBranch"
+CURRENT_BRANCH=${branch:2}
 
 # 拉取子仓库
-git subtree pull --squash --prefix=shared ../repo-common $currBranch
+git subtree pull --squash --prefix=shared ../repo-common $CURRENT_BRANCH
