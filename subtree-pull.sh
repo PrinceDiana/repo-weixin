@@ -1,8 +1,8 @@
 #!/bin/bash
 # 当前分支
-branch=`git branch | grep "*"`
+BRANCH=`git branch | grep "*"`
 
-echo "$branch"
+echo "$BRANCH"
 
 # 拉取子仓库
-git subtree pull --squash --prefix=shared ../repo-common ${branch}
+git subtree pull --squash --prefix=shared ../repo-common $BRANCH
