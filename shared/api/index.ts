@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-// 来自子仓库的提交
+// 来自子仓库的提交111
 // 父仓库修改子模块
 // 来自repo-weixin/feature/B的提交
 export class ApiContractBatch {
