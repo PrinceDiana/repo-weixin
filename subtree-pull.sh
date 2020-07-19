@@ -5,4 +5,4 @@ branch=`git branch | grep "*"`
 echo "$branch"
 
 # 拉取子仓库
-git subtree pull --prefix=shared ../repo-common ${branch}
+git subtree pull --squash --prefix=shared ../repo-common ${branch}
