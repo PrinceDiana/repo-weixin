@@ -19,3 +19,8 @@ export interface Contract {
 export interface Seal {
     id: string
 }
+
+// REQ-3500
+export interface Company {
+    id: string
+}
