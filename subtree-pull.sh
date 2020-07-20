@@ -6,4 +6,4 @@ branch=`git branch | grep "*"`
 CURRENT_BRANCH=${branch:2}
 
 # 拉取子仓库
-git subtree pull --prefix=shared https://github.com/PrinceDiana/repo-common.git $CURRENT_BRANCH
+git subtree pull --prefix=shared https://github.com/PrinceDiana/repo-common.git $CURRENT_BRANCH --squash
